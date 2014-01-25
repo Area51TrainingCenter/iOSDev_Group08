@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>394D44B6-9293-455C-AB7E-018E6D37FA7F</string>
+	<string>9A6FF9E9-37E2-4C98-B69F-F9CBCEAEEF87</string>
 	<key>IDESourceControlProjectName</key>
 	<string>testGit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>AFD4BED6-6858-40C6-A219-DD82B914C27F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOSDev_Group08</string>
+			<string>testGit</string>
 		</dict>
 	</array>
 </dict>
