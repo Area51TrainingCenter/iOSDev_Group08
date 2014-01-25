@@ -24,8 +24,8 @@
 		8072ED73189406840025AADB /* LoginFacebookParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072ED72189406840025AADB /* LoginFacebookParseTests.m */; };
 		8072ED86189406E40025AADB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8072ED85189406E40025AADB /* Main_iPhone.storyboard */; };
 		8072ED8D1894085B0025AADB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072ED8C1894085B0025AADB /* LoginViewController.m */; };
-		8072ED8F189409A30025AADB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072ED8E189409A30025AADB /* FacebookSDK.framework */; };
 		8072ED96189411470025AADB /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072ED95189411470025AADB /* AppViewController.m */; };
+		8072ED98189414DC0025AADB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072ED97189414DC0025AADB /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +60,9 @@
 		8072ED85189406E40025AADB /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		8072ED8B1894085B0025AADB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		8072ED8C1894085B0025AADB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		8072ED8E189409A30025AADB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		8072ED94189411470025AADB /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
 		8072ED95189411470025AADB /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		8072ED97189414DC0025AADB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8072ED4A189406840025AADB /* CoreGraphics.framework in Frameworks */,
-				8072ED8F189409A30025AADB /* FacebookSDK.framework in Frameworks */,
+				8072ED98189414DC0025AADB /* FacebookSDK.framework in Frameworks */,
 				8072ED4E189406840025AADB /* CoreData.framework in Frameworks */,
 				8072ED4C189406840025AADB /* UIKit.framework in Frameworks */,
 				8072ED48189406840025AADB /* Foundation.framework in Frameworks */,
@@ -114,7 +114,7 @@
 		8072ED46189406840025AADB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8072ED8E189409A30025AADB /* FacebookSDK.framework */,
+				8072ED97189414DC0025AADB /* FacebookSDK.framework */,
 				8072ED47189406840025AADB /* Foundation.framework */,
 				8072ED49189406840025AADB /* CoreGraphics.framework */,
 				8072ED4B189406840025AADB /* UIKit.framework */,
@@ -480,6 +480,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Franti/Documents/github/grupo08/iOSDev_Group08/module_3/class_01/LoginFacebookParse,
+					/Users/Franti/Documents/github/newGroup08/iOSDev_Group08/module_3/class_01/LoginFacebookParse,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginFacebookParse/LoginFacebookParse-Prefix.pch";
@@ -497,6 +498,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Franti/Documents/github/grupo08/iOSDev_Group08/module_3/class_01/LoginFacebookParse,
+					/Users/Franti/Documents/github/newGroup08/iOSDev_Group08/module_3/class_01/LoginFacebookParse,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginFacebookParse/LoginFacebookParse-Prefix.pch";

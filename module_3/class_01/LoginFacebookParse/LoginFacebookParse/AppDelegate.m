@@ -29,12 +29,15 @@
 - (void)sessionStateChanged:(FBSession *)session state:(FBSessionState)state error:(NSError *)error{
     switch (state) {
         case FBSessionStateOpen:
+            [self showApp];
+            
             //mostrar la app
             break;
         case FBSessionStateClosedLoginFailed:
             //mostrar el login
             break;
         case FBSessionStateClosed:
+            [self showLogin];
             //mostrar login
             break;
         default:
@@ -52,6 +55,15 @@
     LoginViewController *l = [storyboard instantiateViewControllerWithIdentifier:@"loginScene"];
     [self.window setRootViewController:l];
 
+}
+// During the Facebook login flow, your app passes control to the Facebook iOS app or Facebook in a mobile browser.
+// After authentication, your app will be called back with the session information.
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 }
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -72,6 +84,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    [FBAppCall handleDidBecomeActive];
+
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
