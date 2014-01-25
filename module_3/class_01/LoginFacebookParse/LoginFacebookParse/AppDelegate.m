@@ -18,8 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
+    [Parse setApplicationId:@"QD7kNDkQGM3kmamZNJf8STp7HmUnpBcZBsk70jng" clientKey:@"3qsYpBj9e9QmUjCGwc7Y8ht0tzof7BSQB09qQOwY"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
-        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info"] allowLoginUI:NO completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info",@"email"] allowLoginUI:NO completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
             
         }];
     }
@@ -29,8 +32,7 @@
 - (void)sessionStateChanged:(FBSession *)session state:(FBSessionState)state error:(NSError *)error{
     switch (state) {
         case FBSessionStateOpen:
-            [self showApp];
-            
+            [self performSelectorOnMainThread:@selector(ingresarConParse:) withObject:nil waitUntilDone:YES];
             //mostrar la app
             break;
         case FBSessionStateClosedLoginFailed:
@@ -54,7 +56,42 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     LoginViewController *l = [storyboard instantiateViewControllerWithIdentifier:@"loginScene"];
     [self.window setRootViewController:l];
-
+}
+- (void)ingresarConParse:(NSDictionary *)user_data{
+    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        NSLog(@"%@",result);
+        [PFUser logInWithUsernameInBackground:[result objectForKey:@"email"] password:@"" block:^(PFUser *user, NSError *error) {
+            NSLog(@"%@",user);
+            if (user) {
+                //guardo en core data
+                [self showApp];
+            }else{
+                [self registrarNuevoUsuarioEnParse:result];
+            }
+        }];
+    }];
+    
+}
+- (void)registrarNuevoUsuarioEnParse:(NSDictionary *)user_data{
+    PFUser *user = [PFUser new];
+    user.username = [user_data objectForKey:@"email"];
+    user.password = @"";
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            [PFUser logInWithUsernameInBackground:[user_data objectForKey:@"email"] password:@"" block:^(PFUser *user, NSError *error) {
+                NSLog(@"%@",user);
+                if (user) {
+                    //guardar en core data
+                    [self showApp];
+                }else{
+                    
+                }
+            }];
+        }else{
+            NSLog(@"No lo registró");
+        }
+    }];
 }
 // During the Facebook login flow, your app passes control to the Facebook iOS app or Facebook in a mobile browser.
 // After authentication, your app will be called back with the session information.

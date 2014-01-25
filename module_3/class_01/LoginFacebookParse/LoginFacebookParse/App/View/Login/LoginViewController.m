@@ -38,7 +38,7 @@
     if (FBSession.activeSession.state == FBSessionStateOpen|| FBSession.activeSession.state == FBSessionStateOpenTokenExtended ) {
         [FBSession.activeSession closeAndClearTokenInformation];
     }else{
-        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+        [FBSession openActiveSessionWithReadPermissions:@[@"basic_info",@"email"] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
             AppDelegate *ap = [[UIApplication sharedApplication] delegate];
             [ap sessionStateChanged:session state:status error:error];
         }];
