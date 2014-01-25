@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NuevoRegistroViewController.h"
 
-@interface AppViewController : UITableViewController
+@interface AppViewController : UITableViewController<NuevoRegistroViewControllerDelegate>
 
 @end

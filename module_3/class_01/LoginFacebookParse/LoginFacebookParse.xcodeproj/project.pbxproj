@@ -39,6 +39,7 @@
 		8072EDAE18941E4B0025AADB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072EDAD18941E4B0025AADB /* Security.framework */; };
 		8072EDB018941E560025AADB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072EDAF18941E560025AADB /* MobileCoreServices.framework */; };
 		8072EDB218941E610025AADB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072EDB118941E610025AADB /* libz.dylib */; };
+		8072EDB518943FA20025AADB /* NuevoRegistroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072EDB418943FA20025AADB /* NuevoRegistroViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		8072EDAD18941E4B0025AADB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8072EDAF18941E560025AADB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8072EDB118941E610025AADB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8072EDB318943FA20025AADB /* NuevoRegistroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoRegistroViewController.h; sourceTree = "<group>"; };
+		8072EDB418943FA20025AADB /* NuevoRegistroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoRegistroViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +309,8 @@
 			children = (
 				8072ED94189411470025AADB /* AppViewController.h */,
 				8072ED95189411470025AADB /* AppViewController.m */,
+				8072EDB318943FA20025AADB /* NuevoRegistroViewController.h */,
+				8072EDB418943FA20025AADB /* NuevoRegistroViewController.m */,
 			);
 			path = Lista;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8072ED96189411470025AADB /* AppViewController.m in Sources */,
+				8072EDB518943FA20025AADB /* NuevoRegistroViewController.m in Sources */,
 				8072ED8D1894085B0025AADB /* LoginViewController.m in Sources */,
 				8072ED5A189406840025AADB /* AppDelegate.m in Sources */,
 				8072ED5D189406840025AADB /* LoginFacebookParse.xcdatamodeld in Sources */,
