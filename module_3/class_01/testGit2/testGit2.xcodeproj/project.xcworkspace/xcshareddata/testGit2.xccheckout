@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D6E7A0A6-BC31-4E22-BCD2-CEC3EE4B41CD</string>
+	<string>1E124C7C-88B7-4086-A0D7-D2922D70AFED</string>
 	<key>IDESourceControlProjectName</key>
 	<string>testGit2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>AFD4BED6-6858-40C6-A219-DD82B914C27F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>testGit</string>
+			<string>testGit2</string>
 		</dict>
 	</array>
 </dict>
