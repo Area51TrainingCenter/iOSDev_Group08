@@ -12,4 +12,6 @@
 
 - (IBAction)mostrarAlerta:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *miIBOutlet;
+
 @end
