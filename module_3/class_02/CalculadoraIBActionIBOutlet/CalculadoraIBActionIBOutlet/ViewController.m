@@ -28,6 +28,9 @@
 
 - (IBAction)sumar:(id)sender {
     self.resultado.text = [NSString stringWithFormat:@"%i",[self.cajaUno.text intValue]+[self.cajaDos.text intValue]];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Suma" message:self.resultado.text delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:@"Aceptar", nil];
+    [alert show];
 }
 - (IBAction)dividir:(id)sender {
     self.resultado.text = [NSString stringWithFormat:@"%i",[self.cajaUno.text intValue]/[self.cajaDos.text intValue]];
@@ -40,4 +43,16 @@
 - (IBAction)multiplicar:(id)sender {
     self.resultado.text = [NSString stringWithFormat:@"%i",[self.cajaUno.text intValue]*[self.cajaDos.text intValue]];
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    if (buttonIndex==0) {
+        NSLog(@"Canceló");
+    }else{
+        self.view.backgroundColor = [UIColor greenColor];
+        NSLog(@"Cualquier otro botón");
+    }
+    
+}
+
 @end
