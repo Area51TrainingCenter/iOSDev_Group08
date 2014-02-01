@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806A26BD189D8377009E5D52 /* Area51Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A26BC189D8377009E5D52 /* Area51Request.m */; };
+		80BB54BA189D84DC008207A3 /* AppURLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB54B9189D84DC008207A3 /* AppURLS.m */; };
 		80CFC0F7189D80BC002A7295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CFC0F6189D80BC002A7295 /* Foundation.framework */; };
 		80CFC0F9189D80BC002A7295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CFC0F8189D80BC002A7295 /* CoreGraphics.framework */; };
 		80CFC0FB189D80BC002A7295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CFC0FA189D80BC002A7295 /* UIKit.framework */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		806A26BB189D8377009E5D52 /* Area51Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area51Request.h; sourceTree = "<group>"; };
+		806A26BC189D8377009E5D52 /* Area51Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area51Request.m; sourceTree = "<group>"; };
+		80BB54B8189D84DC008207A3 /* AppURLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppURLS.h; sourceTree = "<group>"; };
+		80BB54B9189D84DC008207A3 /* AppURLS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppURLS.m; sourceTree = "<group>"; };
 		80CFC0F3189D80BC002A7295 /* Servicios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Servicios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CFC0F6189D80BC002A7295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80CFC0F8189D80BC002A7295 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -200,6 +206,8 @@
 		80CFC12C189D81A2002A7295 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				806A26BB189D8377009E5D52 /* Area51Request.h */,
+				806A26BC189D8377009E5D52 /* Area51Request.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +215,8 @@
 		80CFC12D189D81A2002A7295 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				80BB54B8189D84DC008207A3 /* AppURLS.h */,
+				80BB54B9189D84DC008207A3 /* AppURLS.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -372,7 +382,9 @@
 				80CFC14C189D8268002A7295 /* AFSecurityPolicy.m in Sources */,
 				80CFC14A189D8268002A7295 /* AFHTTPSessionManager.m in Sources */,
 				80CFC14E189D8268002A7295 /* AFURLRequestSerialization.m in Sources */,
+				806A26BD189D8377009E5D52 /* Area51Request.m in Sources */,
 				80CFC150189D8268002A7295 /* AFURLSessionManager.m in Sources */,
+				80BB54BA189D84DC008207A3 /* AppURLS.m in Sources */,
 				80CFC105189D80BC002A7295 /* main.m in Sources */,
 				80CFC10C189D80BC002A7295 /* Servicios.xcdatamodeld in Sources */,
 			);
@@ -579,6 +591,7 @@
 				80CFC127189D80BC002A7295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80CFC128189D80BC002A7295 /* Build configuration list for PBXNativeTarget "ServiciosTests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +600,7 @@
 				80CFC12A189D80BC002A7295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
