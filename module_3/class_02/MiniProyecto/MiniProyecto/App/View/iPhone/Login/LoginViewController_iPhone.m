@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController_iPhone.h"
+#import "AppDelegate.h"
 
 //custom cells
 #import "LoginFormCell.h"
@@ -51,7 +52,16 @@
     }else{
         l.nombre.text = @"Password";
         l.valor.placeholder = @"";
+        l.valor.delegate=self;
     }
     return l;
+}
+
+#pragma mark
+#pragma mark TextField Delegate Methods
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    AppDelegate *t = [UIApplication sharedApplication].delegate;
+    [t showApp];
+    return YES;
 }
 @end

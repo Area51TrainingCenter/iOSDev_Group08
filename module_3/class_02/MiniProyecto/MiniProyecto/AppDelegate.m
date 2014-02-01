@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppViewController.h"
 
 @implementation AppDelegate
 
@@ -18,7 +19,12 @@
 {
     return YES;
 }
-
+- (void)showApp{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MiniProyecto_iPhone" bundle:nil];
+    AppViewController *a = [storyboard instantiateViewControllerWithIdentifier:@"appScene"];
+    [self.window setRootViewController:a];
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

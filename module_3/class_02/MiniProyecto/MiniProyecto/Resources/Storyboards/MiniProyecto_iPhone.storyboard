@@ -65,6 +65,24 @@
             </objects>
             <point key="canvasLocation" x="127" y="19"/>
         </scene>
+        <!--App View Controller-->
+        <scene sceneID="73g-rM-PI7">
+            <objects>
+                <viewController storyboardIdentifier="appScene" id="JCm-gd-WvD" customClass="AppViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7T5-Fm-E8M"/>
+                        <viewControllerLayoutGuide type="bottom" id="ach-Y0-4CG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rZV-TN-Urk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkP-dE-vEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="19"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
