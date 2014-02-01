@@ -10,6 +10,8 @@
 		80CFC0C2189D4E1A002A7295 /* LoginFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */; };
 		80CFC0C9189D5521002A7295 /* LoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0C8189D5521002A7295 /* LoginCell.m */; };
 		80CFC0D0189D5D16002A7295 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0CF189D5D16002A7295 /* AppViewController.m */; };
+		80CFC0D6189D646E002A7295 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0D3189D646E002A7295 /* JASidePanelController.m */; };
+		80CFC0D7189D646E002A7295 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0D5189D646E002A7295 /* UIViewController+JASidePanel.m */; };
 		80EF6610189D43350038CCA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF660F189D43350038CCA3 /* Foundation.framework */; };
 		80EF6612189D43350038CCA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6611189D43350038CCA3 /* CoreGraphics.framework */; };
 		80EF6614189D43350038CCA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6613189D43350038CCA3 /* UIKit.framework */; };
@@ -48,6 +50,10 @@
 		80CFC0C8189D5521002A7295 /* LoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCell.m; sourceTree = "<group>"; };
 		80CFC0CE189D5D16002A7295 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
 		80CFC0CF189D5D16002A7295 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		80CFC0D2189D646E002A7295 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		80CFC0D3189D646E002A7295 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		80CFC0D4189D646E002A7295 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		80CFC0D5189D646E002A7295 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
 		80EF660C189D43340038CCA3 /* MiniProyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EF660F189D43350038CCA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EF6611189D43350038CCA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +131,17 @@
 				80CFC0CF189D5D16002A7295 /* AppViewController.m */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		80CFC0D1189D646E002A7295 /* JASidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				80CFC0D2189D646E002A7295 /* JASidePanelController.h */,
+				80CFC0D3189D646E002A7295 /* JASidePanelController.m */,
+				80CFC0D4189D646E002A7295 /* UIViewController+JASidePanel.h */,
+				80CFC0D5189D646E002A7295 /* UIViewController+JASidePanel.m */,
+			);
+			path = JASidePanels;
 			sourceTree = "<group>";
 		};
 		80EF6603189D43340038CCA3 = {
@@ -245,6 +262,7 @@
 		80EF664C189D45890038CCA3 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				80CFC0D1189D646E002A7295 /* JASidePanels */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -406,6 +424,8 @@
 				80EF665F189D4A5B0038CCA3 /* LoginViewController_iPhone.m in Sources */,
 				80CFC0C9189D5521002A7295 /* LoginCell.m in Sources */,
 				80EF6666189D4A870038CCA3 /* LoginViewController_iPad.m in Sources */,
+				80CFC0D7189D646E002A7295 /* UIViewController+JASidePanel.m in Sources */,
+				80CFC0D6189D646E002A7295 /* JASidePanelController.m in Sources */,
 				80EF6622189D43350038CCA3 /* AppDelegate.m in Sources */,
 				80CFC0D0189D5D16002A7295 /* AppViewController.m in Sources */,
 				80EF661E189D43350038CCA3 /* main.m in Sources */,
