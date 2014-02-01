@@ -32,11 +32,6 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)awakeFromNib{
-    
-    ;
-    
-    
-    
     [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"menuIzquierdo"]];
     [self setRightPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"menuDerecho"]];
     [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"unoScene"]];
