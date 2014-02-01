@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-307" y="1080"/>
         </scene>
-        <!--View Controller-->
+        <!--Dos View Controller-->
         <scene sceneID="QAy-Rd-Lqu">
             <objects>
-                <viewController id="DNP-uD-3fl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dosScene" id="DNP-uD-3fl" customClass="DosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DUx-6r-o0S"/>
                         <viewControllerLayoutGuide type="bottom" id="GdA-bt-wzb"/>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="49" y="1078"/>
         </scene>
-        <!--View Controller-->
+        <!--Tres View Controller-->
         <scene sceneID="vS3-cD-nfa">
             <objects>
-                <viewController id="Nqj-uI-qee" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tresScene" id="Nqj-uI-qee" customClass="TresViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6a4-rJ-Rhu"/>
                         <viewControllerLayoutGuide type="bottom" id="52P-q6-V3i"/>

@@ -15,6 +15,8 @@
 		80CFC0DD189D663F002A7295 /* MenuDerechoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0DC189D663F002A7295 /* MenuDerechoViewController.m */; };
 		80CFC0E0189D6879002A7295 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0DF189D6879002A7295 /* AppViewController.m */; };
 		80CFC0E3189D6CE7002A7295 /* UnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0E2189D6CE7002A7295 /* UnoViewController.m */; };
+		80CFC0E6189D74AD002A7295 /* DosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0E5189D74AD002A7295 /* DosViewController.m */; };
+		80CFC0E9189D74B6002A7295 /* TresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0E8189D74B6002A7295 /* TresViewController.m */; };
 		80EF6610189D43350038CCA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF660F189D43350038CCA3 /* Foundation.framework */; };
 		80EF6612189D43350038CCA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6611189D43350038CCA3 /* CoreGraphics.framework */; };
 		80EF6614189D43350038CCA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6613189D43350038CCA3 /* UIKit.framework */; };
@@ -63,6 +65,10 @@
 		80CFC0DF189D6879002A7295 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		80CFC0E1189D6CE7002A7295 /* UnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnoViewController.h; sourceTree = "<group>"; };
 		80CFC0E2189D6CE7002A7295 /* UnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnoViewController.m; sourceTree = "<group>"; };
+		80CFC0E4189D74AD002A7295 /* DosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosViewController.h; sourceTree = "<group>"; };
+		80CFC0E5189D74AD002A7295 /* DosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosViewController.m; sourceTree = "<group>"; };
+		80CFC0E7189D74B6002A7295 /* TresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TresViewController.h; sourceTree = "<group>"; };
+		80CFC0E8189D74B6002A7295 /* TresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TresViewController.m; sourceTree = "<group>"; };
 		80EF660C189D43340038CCA3 /* MiniProyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EF660F189D43350038CCA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EF6611189D43350038CCA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +150,10 @@
 				80CFC0DF189D6879002A7295 /* AppViewController.m */,
 				80CFC0E1189D6CE7002A7295 /* UnoViewController.h */,
 				80CFC0E2189D6CE7002A7295 /* UnoViewController.m */,
+				80CFC0E4189D74AD002A7295 /* DosViewController.h */,
+				80CFC0E5189D74AD002A7295 /* DosViewController.m */,
+				80CFC0E7189D74B6002A7295 /* TresViewController.h */,
+				80CFC0E8189D74B6002A7295 /* TresViewController.m */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -437,7 +447,9 @@
 				80EF6625189D43350038CCA3 /* MiniProyecto.xcdatamodeld in Sources */,
 				80CFC0C2189D4E1A002A7295 /* LoginFormCell.m in Sources */,
 				80EF665F189D4A5B0038CCA3 /* LoginViewController_iPhone.m in Sources */,
+				80CFC0E6189D74AD002A7295 /* DosViewController.m in Sources */,
 				80CFC0C9189D5521002A7295 /* LoginCell.m in Sources */,
+				80CFC0E9189D74B6002A7295 /* TresViewController.m in Sources */,
 				80EF6666189D4A870038CCA3 /* LoginViewController_iPad.m in Sources */,
 				80CFC0E3189D6CE7002A7295 /* UnoViewController.m in Sources */,
 				80CFC0D7189D646E002A7295 /* UIViewController+JASidePanel.m in Sources */,
