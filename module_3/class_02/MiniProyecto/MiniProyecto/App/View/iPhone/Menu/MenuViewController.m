@@ -60,7 +60,8 @@
         [self.sidePanelController setCenterPanel:uno];
     }else if (indexPath.row==1){
         DosViewController *dos = [self.storyboard instantiateViewControllerWithIdentifier:@"dosScene"];
-        [self.sidePanelController setCenterPanel:dos];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:dos];
+        [self.sidePanelController setCenterPanel:nav];
     }else{
         TresViewController *dos = [self.storyboard instantiateViewControllerWithIdentifier:@"tresScene"];
         [self.sidePanelController setCenterPanel:dos];

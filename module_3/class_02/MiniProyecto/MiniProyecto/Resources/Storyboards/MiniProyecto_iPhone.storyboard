@@ -142,10 +142,36 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.43921568630000002" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="w2b-qx-629">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1jp-OD-2Lc">
+                            <connections>
+                                <segue destination="oeU-n7-ajK" kind="push" id="Juf-ft-1H4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgO-0q-uXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="1078"/>
+            <point key="canvasLocation" x="411" y="1078"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u9y-w8-Dns">
+            <objects>
+                <viewController id="oeU-n7-ajK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="omY-30-xDC"/>
+                        <viewControllerLayoutGuide type="bottom" id="wIf-wL-c8F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jwz-At-dZm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.97637143339999999" green="0.26035817" blue="0.25194976219999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hZa-NF-VOp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKY-eg-wO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="1080"/>
         </scene>
         <!--Tres View Controller-->
         <scene sceneID="vS3-cD-nfa">
@@ -172,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdr-Of-UEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="1078"/>
+            <point key="canvasLocation" x="850" y="368"/>
         </scene>
         <!--Menu Derecho View Controller-->
         <scene sceneID="m6N-SV-ydL">
@@ -227,6 +253,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkP-dE-vEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-323" y="343"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gn7-b4-d58">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T1w-KJ-Td6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9I-Kw-s7q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DNP-uD-3fl" kind="relationship" relationship="rootViewController" id="v3h-at-Sy9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ji8-w8-bwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="1078"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
