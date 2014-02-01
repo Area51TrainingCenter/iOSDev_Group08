@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController_iPad : UIViewController
+@interface LoginViewController_iPad : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *loginTableView;
 
 @end

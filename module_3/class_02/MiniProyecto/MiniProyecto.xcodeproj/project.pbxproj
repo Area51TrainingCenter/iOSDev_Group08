@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80CFC0C2189D4E1A002A7295 /* LoginFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */; };
+		80CFC0C9189D5521002A7295 /* LoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0C8189D5521002A7295 /* LoginCell.m */; };
 		80EF6610189D43350038CCA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF660F189D43350038CCA3 /* Foundation.framework */; };
 		80EF6612189D43350038CCA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6611189D43350038CCA3 /* CoreGraphics.framework */; };
 		80EF6614189D43350038CCA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6613189D43350038CCA3 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		80CFC0C0189D4E1A002A7295 /* LoginFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFormCell.h; sourceTree = "<group>"; };
 		80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFormCell.m; sourceTree = "<group>"; };
+		80CFC0C7189D5521002A7295 /* LoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCell.h; sourceTree = "<group>"; };
+		80CFC0C8189D5521002A7295 /* LoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCell.m; sourceTree = "<group>"; };
 		80EF660C189D43340038CCA3 /* MiniProyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EF660F189D43350038CCA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EF6611189D43350038CCA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,6 +102,15 @@
 			children = (
 				80CFC0C0189D4E1A002A7295 /* LoginFormCell.h */,
 				80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		80CFC0C6189D5521002A7295 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80CFC0C7189D5521002A7295 /* LoginCell.h */,
+				80CFC0C8189D5521002A7295 /* LoginCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 		80EF6663189D4A870038CCA3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				80CFC0C6189D5521002A7295 /* Cell */,
 				80EF6664189D4A870038CCA3 /* LoginViewController_iPad.h */,
 				80EF6665189D4A870038CCA3 /* LoginViewController_iPad.m */,
 			);
@@ -378,6 +391,7 @@
 				80EF6625189D43350038CCA3 /* MiniProyecto.xcdatamodeld in Sources */,
 				80CFC0C2189D4E1A002A7295 /* LoginFormCell.m in Sources */,
 				80EF665F189D4A5B0038CCA3 /* LoginViewController_iPhone.m in Sources */,
+				80CFC0C9189D5521002A7295 /* LoginCell.m in Sources */,
 				80EF6666189D4A870038CCA3 /* LoginViewController_iPad.m in Sources */,
 				80EF6622189D43350038CCA3 /* AppDelegate.m in Sources */,
 				80EF661E189D43350038CCA3 /* main.m in Sources */,
