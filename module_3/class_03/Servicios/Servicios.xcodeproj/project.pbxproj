@@ -22,6 +22,7 @@
 		80CFC118189D80BC002A7295 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CFC0FC189D80BC002A7295 /* CoreData.framework */; };
 		80CFC120189D80BC002A7295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80CFC11E189D80BC002A7295 /* InfoPlist.strings */; };
 		80CFC122189D80BC002A7295 /* ServiciosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC121189D80BC002A7295 /* ServiciosTests.m */; };
+		80CFC133189D81B8002A7295 /* Servicios.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CFC132189D81B8002A7295 /* Servicios.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		80CFC11D189D80BC002A7295 /* ServiciosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ServiciosTests-Info.plist"; sourceTree = "<group>"; };
 		80CFC11F189D80BC002A7295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80CFC121189D80BC002A7295 /* ServiciosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiciosTests.m; sourceTree = "<group>"; };
+		80CFC132189D81B8002A7295 /* Servicios.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Servicios.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +117,14 @@
 		80CFC0FE189D80BC002A7295 /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
+				80CFC12B189D81A2002A7295 /* App */,
+				80CFC130189D81A2002A7295 /* Resources */,
 				80CFC107189D80BC002A7295 /* AppDelegate.h */,
 				80CFC108189D80BC002A7295 /* AppDelegate.m */,
 				80CFC10D189D80BC002A7295 /* Images.xcassets */,
 				80CFC10A189D80BC002A7295 /* Servicios.xcdatamodeld */,
 				80CFC0FF189D80BC002A7295 /* Supporting Files */,
+				80CFC132189D81B8002A7295 /* Servicios.storyboard */,
 			);
 			path = Servicios;
 			sourceTree = "<group>";
@@ -151,6 +156,60 @@
 				80CFC11E189D80BC002A7295 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80CFC12B189D81A2002A7295 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80CFC12C189D81A2002A7295 /* Controller */,
+				80CFC12D189D81A2002A7295 /* Helpers */,
+				80CFC12E189D81A2002A7295 /* Model */,
+				80CFC12F189D81A2002A7295 /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80CFC12C189D81A2002A7295 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80CFC12D189D81A2002A7295 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		80CFC12E189D81A2002A7295 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80CFC12F189D81A2002A7295 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80CFC130189D81A2002A7295 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80CFC131189D81A2002A7295 /* Libraries */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80CFC131189D81A2002A7295 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CFC133189D81B8002A7295 /* Servicios.storyboard in Resources */,
 				80CFC103189D80BC002A7295 /* InfoPlist.strings in Resources */,
 				80CFC10E189D80BC002A7295 /* Images.xcassets in Resources */,
 			);
@@ -375,6 +435,7 @@
 				GCC_PREFIX_HEADER = "Servicios/Servicios-Prefix.pch";
 				INFOPLIST_FILE = "Servicios/Servicios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,6 +449,7 @@
 				GCC_PREFIX_HEADER = "Servicios/Servicios-Prefix.pch";
 				INFOPLIST_FILE = "Servicios/Servicios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
