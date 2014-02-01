@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80CFC0C2189D4E1A002A7295 /* LoginFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */; };
 		80EF6610189D43350038CCA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF660F189D43350038CCA3 /* Foundation.framework */; };
 		80EF6612189D43350038CCA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6611189D43350038CCA3 /* CoreGraphics.framework */; };
 		80EF6614189D43350038CCA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF6613189D43350038CCA3 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80CFC0C0189D4E1A002A7295 /* LoginFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFormCell.h; sourceTree = "<group>"; };
+		80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFormCell.m; sourceTree = "<group>"; };
 		80EF660C189D43340038CCA3 /* MiniProyecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProyecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EF660F189D43350038CCA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EF6611189D43350038CCA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80CFC0BF189D4E1A002A7295 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80CFC0C0189D4E1A002A7295 /* LoginFormCell.h */,
+				80CFC0C1189D4E1A002A7295 /* LoginFormCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		80EF6603189D43340038CCA3 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +262,7 @@
 		80EF665C189D4A490038CCA3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				80CFC0BF189D4E1A002A7295 /* Cell */,
 				80EF665D189D4A5B0038CCA3 /* LoginViewController_iPhone.h */,
 				80EF665E189D4A5B0038CCA3 /* LoginViewController_iPhone.m */,
 			);
@@ -363,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EF6625189D43350038CCA3 /* MiniProyecto.xcdatamodeld in Sources */,
+				80CFC0C2189D4E1A002A7295 /* LoginFormCell.m in Sources */,
 				80EF665F189D4A5B0038CCA3 /* LoginViewController_iPhone.m in Sources */,
 				80EF6666189D4A870038CCA3 /* LoginViewController_iPad.m in Sources */,
 				80EF6622189D43350038CCA3 /* AppDelegate.m in Sources */,
@@ -569,6 +583,7 @@
 				80EF6640189D43350038CCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80EF6641189D43350038CCA3 /* Build configuration list for PBXNativeTarget "MiniProyectoTests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +592,7 @@
 				80EF6643189D43350038CCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
