@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80735BAF18A680AC0019007D /* UbigeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80735BAE18A680AC0019007D /* UbigeoViewController.m */; };
+		80735BB618A686790019007D /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80735BB518A686790019007D /* CustomPickerViewController.m */; };
+		80A30B4518A68E7F002BDDE5 /* AppServiciosRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4418A68E7F002BDDE5 /* AppServiciosRequest.m */; };
+		80A30B4818A691E1002BDDE5 /* ServiciosClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4718A691E1002BDDE5 /* ServiciosClient.m */; };
+		80A30B4B18A6961A002BDDE5 /* AppURLs.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4A18A6961A002BDDE5 /* AppURLs.m */; };
 		80B7213B18A67CBE001EAFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7213A18A67CBE001EAFF4 /* Foundation.framework */; };
 		80B7213D18A67CBE001EAFF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7213C18A67CBE001EAFF4 /* CoreGraphics.framework */; };
 		80B7213F18A67CBE001EAFF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7213E18A67CBE001EAFF4 /* UIKit.framework */; };
@@ -45,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80735BAD18A680AC0019007D /* UbigeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UbigeoViewController.h; sourceTree = "<group>"; };
+		80735BAE18A680AC0019007D /* UbigeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UbigeoViewController.m; sourceTree = "<group>"; };
+		80735BB418A686790019007D /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
+		80735BB518A686790019007D /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
+		80A30B4318A68E7F002BDDE5 /* AppServiciosRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppServiciosRequest.h; sourceTree = "<group>"; };
+		80A30B4418A68E7F002BDDE5 /* AppServiciosRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppServiciosRequest.m; sourceTree = "<group>"; };
+		80A30B4618A691E1002BDDE5 /* ServiciosClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiciosClient.h; sourceTree = "<group>"; };
+		80A30B4718A691E1002BDDE5 /* ServiciosClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiciosClient.m; sourceTree = "<group>"; };
+		80A30B4918A6961A002BDDE5 /* AppURLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppURLs.h; sourceTree = "<group>"; };
+		80A30B4A18A6961A002BDDE5 /* AppURLs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppURLs.m; sourceTree = "<group>"; };
 		80B7213718A67CBE001EAFF4 /* AppServicios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppServicios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B7213A18A67CBE001EAFF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80B7213C18A67CBE001EAFF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80735BB318A686790019007D /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				80735BB418A686790019007D /* CustomPickerViewController.h */,
+				80735BB518A686790019007D /* CustomPickerViewController.m */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
 		80B7212E18A67CBE001EAFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +224,10 @@
 		80B7217218A67EF9001EAFF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				80A30B4318A68E7F002BDDE5 /* AppServiciosRequest.h */,
+				80A30B4418A68E7F002BDDE5 /* AppServiciosRequest.m */,
+				80A30B4618A691E1002BDDE5 /* ServiciosClient.h */,
+				80A30B4718A691E1002BDDE5 /* ServiciosClient.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +235,8 @@
 		80B7217318A67EF9001EAFF4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				80A30B4918A6961A002BDDE5 /* AppURLs.h */,
+				80A30B4A18A6961A002BDDE5 /* AppURLs.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -221,6 +251,9 @@
 		80B7217518A67EF9001EAFF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80735BB318A686790019007D /* Picker */,
+				80735BAD18A680AC0019007D /* UbigeoViewController.h */,
+				80735BAE18A680AC0019007D /* UbigeoViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,8 +397,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B7218C18A67F1C001EAFF4 /* AFHTTPRequestOperation.m in Sources */,
+				80A30B4B18A6961A002BDDE5 /* AppURLs.m in Sources */,
 				80B7215018A67CBE001EAFF4 /* AppServicios.xcdatamodeld in Sources */,
+				80A30B4818A691E1002BDDE5 /* ServiciosClient.m in Sources */,
 				80B7218D18A67F1C001EAFF4 /* AFHTTPRequestOperationManager.m in Sources */,
+				80735BAF18A680AC0019007D /* UbigeoViewController.m in Sources */,
 				80B7218F18A67F1C001EAFF4 /* AFNetworkReachabilityManager.m in Sources */,
 				80B7219318A67F1C001EAFF4 /* AFURLResponseSerialization.m in Sources */,
 				80B7219118A67F1C001EAFF4 /* AFURLConnectionOperation.m in Sources */,
@@ -375,6 +411,8 @@
 				80B7219418A67F1C001EAFF4 /* AFURLSessionManager.m in Sources */,
 				80B7214D18A67CBE001EAFF4 /* AppDelegate.m in Sources */,
 				80B7214918A67CBE001EAFF4 /* main.m in Sources */,
+				80735BB618A686790019007D /* CustomPickerViewController.m in Sources */,
+				80A30B4518A68E7F002BDDE5 /* AppServiciosRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +613,7 @@
 				80B7216B18A67CBE001EAFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80B7216C18A67CBE001EAFF4 /* Build configuration list for PBXNativeTarget "AppServiciosTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +622,7 @@
 				80B7216E18A67CBE001EAFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
