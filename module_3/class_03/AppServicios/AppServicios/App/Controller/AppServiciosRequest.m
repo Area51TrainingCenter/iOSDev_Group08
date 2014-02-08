@@ -20,4 +20,14 @@
         NSLog(@"%@\n%@",task.response,error.localizedDescription);
     }];
 }
+
++ (void)traerListaDePronvicia:(NSString *)idDepartamento bloque:(void (^)(id, NSError *))bloque{
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:idDepartamento, @"codDep", nil];
+    
+    [[ServiciosClient sharedClient] POST:[AppURLs obtenerProvincias] parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.localizedDescription);
+    }];
+}
 @end

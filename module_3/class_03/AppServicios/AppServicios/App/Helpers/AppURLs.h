@@ -11,4 +11,5 @@
 @interface AppURLs : NSObject
 + (NSURL *)urlBase;
 + (NSString *)obtenerDepartamentos;
++ (NSString *)obtenerProvincias;
 @end

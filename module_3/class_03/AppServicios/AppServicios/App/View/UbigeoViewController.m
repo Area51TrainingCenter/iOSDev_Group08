@@ -27,7 +27,12 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
+    /*
     [AppServiciosRequest solicitarListaDeDepartamentosConBloque:^(id listaDepartmentos, NSError *error) {
+        
+    }];*/
+    
+    [AppServiciosRequest traerListaDePronvicia:@"" bloque:^(id listaProvincias, NSError *error) {
         
     }];
 

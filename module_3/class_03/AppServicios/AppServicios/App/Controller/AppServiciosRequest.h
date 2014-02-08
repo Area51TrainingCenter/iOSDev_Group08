@@ -10,4 +10,6 @@
 
 @interface AppServiciosRequest : NSObject
 + (void)solicitarListaDeDepartamentosConBloque:(void(^)(id listaDepartmentos, NSError *error))bloque;
+
++ (void)traerListaDePronvicia:(NSString *)idDepartamento bloque:(void(^)(id listaProvincias, NSError *error))bloque;
 @end
