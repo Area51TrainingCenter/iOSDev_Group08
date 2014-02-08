@@ -8,9 +8,12 @@
 
 #import "UbigeoViewController.h"
 #import "AppServiciosRequest.h"
+#import "Departamento.h"
 
 @interface UbigeoViewController ()
 @property (nonatomic, strong) UIPickerView *miPicker;
+@property (nonatomic, strong) NSArray *listaDeDepartamentos;
+@property (nonatomic, strong) Departamento *currentDepartamento;
 @end
 
 @implementation UbigeoViewController
@@ -30,7 +33,8 @@
     
     [AppServiciosRequest solicitarListaDeDepartamentosConBloque:^(id listaDepartmentos, NSError *error) {
         if (!error) {
-            NSLog(@"%@",listaDepartmentos);
+            self.listaDeDepartamentos = listaDepartmentos;
+            //NSLog(@"%@",listaDepartmentos);
         }
     }];
     /*
@@ -54,16 +58,20 @@
     return 1;
 }
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return 10;
+    return [self.listaDeDepartamentos count];
 }
 
 #pragma mark -
 #pragma mark Picker View Delegate Methods
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return @"Area51";
+    
+    Departamento *d = [self.listaDeDepartamentos objectAtIndex:row];
+    return d.dep_nombre;
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    self.departamento.text = @"Lima";
+    self.currentDepartamento = [self.listaDeDepartamentos objectAtIndex:row];
+    
+    self.departamento.text = self.currentDepartamento.dep_nombre;
 }
 
 #pragma mark -
