@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Departamento" representedClassName="Departamento" syncable="YES">
+        <attribute name="dep_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dep_nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Distrito" representedClassName="Distrito" syncable="YES">
+        <attribute name="di_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="di_nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Provincia" representedClassName="Provincia" syncable="YES">
+        <attribute name="pro_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pro_nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Departamento" positionX="-92" positionY="135" width="128" height="75"/>
+        <element name="Provincia" positionX="-207" positionY="222" width="128" height="75"/>
+        <element name="Distrito" positionX="-315" positionY="126" width="128" height="75"/>
+    </elements>
 </model>

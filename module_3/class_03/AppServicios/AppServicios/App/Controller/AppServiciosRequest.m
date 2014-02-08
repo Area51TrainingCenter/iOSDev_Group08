@@ -9,12 +9,20 @@
 #import "AppServiciosRequest.h"
 #import "ServiciosClient.h"
 #import "AppURLs.h"
+#import "CDTool.h"
 
 @implementation AppServiciosRequest
 
 + (void)solicitarListaDeDepartamentosConBloque:(void(^)(id listaDepartmentos, NSError *error))bloque{
     
     [[ServiciosClient sharedClient] POST:[AppURLs obtenerDepartamentos] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        if ([[CDTool sharedInstance] guardaDepartamentos:responseObject]) {
+            bloque([[CDTool sharedInstance] obtenerDepartamentos], nil);
+        }else{
+            
+        }
+
         NSLog(@"%@\n%@",task.response,responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@\n%@",task.response,error.localizedDescription);

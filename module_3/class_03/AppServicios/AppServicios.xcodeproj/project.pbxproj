@@ -12,6 +12,10 @@
 		80A30B4518A68E7F002BDDE5 /* AppServiciosRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4418A68E7F002BDDE5 /* AppServiciosRequest.m */; };
 		80A30B4818A691E1002BDDE5 /* ServiciosClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4718A691E1002BDDE5 /* ServiciosClient.m */; };
 		80A30B4B18A6961A002BDDE5 /* AppURLs.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4A18A6961A002BDDE5 /* AppURLs.m */; };
+		80A30B4E18A6AA57002BDDE5 /* CDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B4D18A6AA57002BDDE5 /* CDTool.m */; };
+		80A30B5E18A6ABA4002BDDE5 /* Departamento.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B5918A6ABA4002BDDE5 /* Departamento.m */; };
+		80A30B5F18A6ABA4002BDDE5 /* Distrito.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B5B18A6ABA4002BDDE5 /* Distrito.m */; };
+		80A30B6018A6ABA4002BDDE5 /* Provincia.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A30B5D18A6ABA4002BDDE5 /* Provincia.m */; };
 		80B7213B18A67CBE001EAFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7213A18A67CBE001EAFF4 /* Foundation.framework */; };
 		80B7213D18A67CBE001EAFF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7213C18A67CBE001EAFF4 /* CoreGraphics.framework */; };
 		80B7213F18A67CBE001EAFF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7213E18A67CBE001EAFF4 /* UIKit.framework */; };
@@ -60,6 +64,14 @@
 		80A30B4718A691E1002BDDE5 /* ServiciosClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiciosClient.m; sourceTree = "<group>"; };
 		80A30B4918A6961A002BDDE5 /* AppURLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppURLs.h; sourceTree = "<group>"; };
 		80A30B4A18A6961A002BDDE5 /* AppURLs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppURLs.m; sourceTree = "<group>"; };
+		80A30B4C18A6AA57002BDDE5 /* CDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTool.h; sourceTree = "<group>"; };
+		80A30B4D18A6AA57002BDDE5 /* CDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTool.m; sourceTree = "<group>"; };
+		80A30B5818A6ABA4002BDDE5 /* Departamento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Departamento.h; sourceTree = "<group>"; };
+		80A30B5918A6ABA4002BDDE5 /* Departamento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Departamento.m; sourceTree = "<group>"; };
+		80A30B5A18A6ABA4002BDDE5 /* Distrito.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distrito.h; sourceTree = "<group>"; };
+		80A30B5B18A6ABA4002BDDE5 /* Distrito.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Distrito.m; sourceTree = "<group>"; };
+		80A30B5C18A6ABA4002BDDE5 /* Provincia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Provincia.h; sourceTree = "<group>"; };
+		80A30B5D18A6ABA4002BDDE5 /* Provincia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Provincia.m; sourceTree = "<group>"; };
 		80B7213718A67CBE001EAFF4 /* AppServicios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppServicios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B7213A18A67CBE001EAFF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80B7213C18A67CBE001EAFF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +249,8 @@
 			children = (
 				80A30B4918A6961A002BDDE5 /* AppURLs.h */,
 				80A30B4A18A6961A002BDDE5 /* AppURLs.m */,
+				80A30B4C18A6AA57002BDDE5 /* CDTool.h */,
+				80A30B4D18A6AA57002BDDE5 /* CDTool.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -244,6 +258,12 @@
 		80B7217418A67EF9001EAFF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				80A30B5818A6ABA4002BDDE5 /* Departamento.h */,
+				80A30B5918A6ABA4002BDDE5 /* Departamento.m */,
+				80A30B5A18A6ABA4002BDDE5 /* Distrito.h */,
+				80A30B5B18A6ABA4002BDDE5 /* Distrito.m */,
+				80A30B5C18A6ABA4002BDDE5 /* Provincia.h */,
+				80A30B5D18A6ABA4002BDDE5 /* Provincia.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,15 +424,19 @@
 				80735BAF18A680AC0019007D /* UbigeoViewController.m in Sources */,
 				80B7218F18A67F1C001EAFF4 /* AFNetworkReachabilityManager.m in Sources */,
 				80B7219318A67F1C001EAFF4 /* AFURLResponseSerialization.m in Sources */,
+				80A30B4E18A6AA57002BDDE5 /* CDTool.m in Sources */,
+				80A30B5E18A6ABA4002BDDE5 /* Departamento.m in Sources */,
 				80B7219118A67F1C001EAFF4 /* AFURLConnectionOperation.m in Sources */,
 				80B7219018A67F1C001EAFF4 /* AFSecurityPolicy.m in Sources */,
 				80B7218E18A67F1C001EAFF4 /* AFHTTPSessionManager.m in Sources */,
 				80B7219218A67F1C001EAFF4 /* AFURLRequestSerialization.m in Sources */,
 				80B7219418A67F1C001EAFF4 /* AFURLSessionManager.m in Sources */,
+				80A30B5F18A6ABA4002BDDE5 /* Distrito.m in Sources */,
 				80B7214D18A67CBE001EAFF4 /* AppDelegate.m in Sources */,
 				80B7214918A67CBE001EAFF4 /* main.m in Sources */,
 				80735BB618A686790019007D /* CustomPickerViewController.m in Sources */,
 				80A30B4518A68E7F002BDDE5 /* AppServiciosRequest.m in Sources */,
+				80A30B6018A6ABA4002BDDE5 /* Provincia.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
