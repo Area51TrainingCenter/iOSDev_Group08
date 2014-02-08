@@ -22,6 +22,7 @@
 		80B7215C18A67CBE001EAFF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B7214018A67CBE001EAFF4 /* CoreData.framework */; };
 		80B7216418A67CBE001EAFF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B7216218A67CBE001EAFF4 /* InfoPlist.strings */; };
 		80B7216618A67CBE001EAFF4 /* AppServiciosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7216518A67CBE001EAFF4 /* AppServiciosTests.m */; };
+		80B7217018A67CDD001EAFF4 /* AppServicios_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B7216F18A67CDD001EAFF4 /* AppServicios_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		80B7216118A67CBE001EAFF4 /* AppServiciosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppServiciosTests-Info.plist"; sourceTree = "<group>"; };
 		80B7216318A67CBE001EAFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80B7216518A67CBE001EAFF4 /* AppServiciosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppServiciosTests.m; sourceTree = "<group>"; };
+		80B7216F18A67CDD001EAFF4 /* AppServicios_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppServicios_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				80B7215118A67CBE001EAFF4 /* Images.xcassets */,
 				80B7214E18A67CBE001EAFF4 /* AppServicios.xcdatamodeld */,
 				80B7214318A67CBE001EAFF4 /* Supporting Files */,
+				80B7216F18A67CDD001EAFF4 /* AppServicios_iPhone.storyboard */,
 			);
 			path = AppServicios;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B7217018A67CDD001EAFF4 /* AppServicios_iPhone.storyboard in Resources */,
 				80B7214718A67CBE001EAFF4 /* InfoPlist.strings in Resources */,
 				80B7215218A67CBE001EAFF4 /* Images.xcassets in Resources */,
 			);
