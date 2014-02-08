@@ -12,4 +12,5 @@
 + (NSURL *)urlBase;
 + (NSString *)obtenerDepartamentos;
 + (NSString *)obtenerProvincias;
++ (NSString *)obtenerDistrito;
 @end

@@ -12,4 +12,6 @@
 + (void)solicitarListaDeDepartamentosConBloque:(void(^)(id listaDepartmentos, NSError *error))bloque;
 
 + (void)traerListaDePronvicia:(NSString *)idDepartamento bloque:(void(^)(id listaProvincias, NSError *error))bloque;
+
++ (void)traerDistritoDe:(NSString *)idDepartamento yPrivincia:(NSString *)idProvincia bloque:(void(^)(id listaDistritos, NSError *error))bloque;
 @end

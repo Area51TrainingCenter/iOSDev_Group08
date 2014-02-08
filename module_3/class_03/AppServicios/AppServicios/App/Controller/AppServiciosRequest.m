@@ -30,4 +30,15 @@
         NSLog(@"%@",error.localizedDescription);
     }];
 }
+
++ (void)traerDistritoDe:(NSString *)idDepartamento yPrivincia:(NSString *)idProvincia bloque:(void(^)(id listaDistritos, NSError *error))bloque{
+    
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:idDepartamento, @"codDep", idProvincia, @"codPro", nil];
+    
+    [[ServiciosClient sharedClient] POST:[AppURLs obtenerDistrito] parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error.localizedDescription);
+    }];
+}
 @end
