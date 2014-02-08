@@ -49,5 +49,13 @@
         return NO;
     }
 }
+- (NSArray *)obtenerDepartamentos{
+    NSFetchRequest *fetchRequest = [NSFetchRequest new];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Departamento" inManagedObjectContext:self.context];
+    [fetchRequest setEntity:entity];
+    NSError *er;
+    //NSLog(@"%@",[self.context executeFetchRequest:fetchRequest error:&er]);
+    return [self.context executeFetchRequest:fetchRequest error:&er];
+}
 
 @end

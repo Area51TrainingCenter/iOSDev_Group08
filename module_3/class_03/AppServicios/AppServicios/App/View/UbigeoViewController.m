@@ -29,7 +29,9 @@
     
     
     [AppServiciosRequest solicitarListaDeDepartamentosConBloque:^(id listaDepartmentos, NSError *error) {
-        
+        if (!error) {
+            NSLog(@"%@",listaDepartmentos);
+        }
     }];
     /*
     [AppServiciosRequest traerListaDePronvicia:@"" bloque:^(id listaProvincias, NSError *error) {
