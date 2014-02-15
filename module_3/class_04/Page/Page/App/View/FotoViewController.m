@@ -7,6 +7,7 @@
 //
 
 #import "FotoViewController.h"
+#import "PageController.h"
 
 @interface FotoViewController ()
 @property (nonatomic, strong) NSArray *fotos;
@@ -26,7 +27,9 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.imagenAMostrar.image = [UIImage imageNamed:@"stopOne"];
+    NSString *nombreDeFoto = [[[PageController sharedInstance] obtenerFotos] objectAtIndex:self.numeroDeFotoQueDeboMostrar];
+    
+    self.imagenAMostrar.image = [UIImage imageNamed:nombreDeFoto];
 	// Do any additional setup after loading the view.
 }
 - (void)didReceiveMemoryWarning{

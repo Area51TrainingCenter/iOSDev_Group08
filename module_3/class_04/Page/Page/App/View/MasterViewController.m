@@ -55,10 +55,22 @@
 #pragma mark -
 #pragma mark Page View Data Source Methods
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
-    return nil;
+    
+    NSUInteger index = [(FotoViewController *)viewController numeroDeFotoQueDeboMostrar];
+    if (index == 0) {
+        return nil;
+    }
+    index--;
+    return [self viewControllerAtIndex:index];
 }
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
-    return nil;
+    NSUInteger index = [(FotoViewController *)viewController numeroDeFotoQueDeboMostrar];
+    index++;
+    
+    if (index == 5) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index];
 }
 
 
