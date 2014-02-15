@@ -19,6 +19,8 @@
 		8038A29818AFF96D006811CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8038A28018AFF96C006811CB /* UIKit.framework */; };
 		8038A2A018AFF96D006811CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8038A29E18AFF96D006811CB /* InfoPlist.strings */; };
 		8038A2A218AFF96D006811CB /* CeldaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A2A118AFF96D006811CB /* CeldaTests.m */; };
+		8038A2AC18AFF981006811CB /* Celda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8038A2AB18AFF981006811CB /* Celda.storyboard */; };
+		8038A2AF18AFF996006811CB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A2AE18AFF996006811CB /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		8038A29D18AFF96D006811CB /* CeldaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CeldaTests-Info.plist"; sourceTree = "<group>"; };
 		8038A29F18AFF96D006811CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8038A2A118AFF96D006811CB /* CeldaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CeldaTests.m; sourceTree = "<group>"; };
+		8038A2AB18AFF981006811CB /* Celda.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Celda.storyboard; sourceTree = "<group>"; };
+		8038A2AD18AFF996006811CB /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		8038A2AE18AFF996006811CB /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				8038A28C18AFF96C006811CB /* AppDelegate.m */,
 				8038A28E18AFF96C006811CB /* Images.xcassets */,
 				8038A28318AFF96C006811CB /* Supporting Files */,
+				8038A2AB18AFF981006811CB /* Celda.storyboard */,
+				8038A2AD18AFF996006811CB /* MasterViewController.h */,
+				8038A2AE18AFF996006811CB /* MasterViewController.m */,
 			);
 			path = Celda;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8038A28718AFF96C006811CB /* InfoPlist.strings in Resources */,
+				8038A2AC18AFF981006811CB /* Celda.storyboard in Resources */,
 				8038A28F18AFF96C006811CB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8038A28D18AFF96C006811CB /* AppDelegate.m in Sources */,
+				8038A2AF18AFF996006811CB /* MasterViewController.m in Sources */,
 				8038A28918AFF96C006811CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
