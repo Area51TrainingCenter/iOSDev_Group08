@@ -19,6 +19,8 @@
 		80C663F418AFB90700F73765 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C663DC18AFB90700F73765 /* UIKit.framework */; };
 		80C663FC18AFB90700F73765 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C663FA18AFB90700F73765 /* InfoPlist.strings */; };
 		80C663FE18AFB90700F73765 /* PageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C663FD18AFB90700F73765 /* PageTests.m */; };
+		80C6640F18AFB95700F73765 /* Page.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C6640E18AFB95700F73765 /* Page.storyboard */; };
+		80C6641218AFB97E00F73765 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C6641118AFB97E00F73765 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		80C663F918AFB90700F73765 /* PageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PageTests-Info.plist"; sourceTree = "<group>"; };
 		80C663FB18AFB90700F73765 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80C663FD18AFB90700F73765 /* PageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageTests.m; sourceTree = "<group>"; };
+		80C6640E18AFB95700F73765 /* Page.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Page.storyboard; sourceTree = "<group>"; };
+		80C6641018AFB97E00F73765 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		80C6641118AFB97E00F73765 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +112,13 @@
 		80C663DE18AFB90700F73765 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				80C6640718AFB93700F73765 /* App */,
+				80C6640B18AFB93700F73765 /* Resources */,
 				80C663E718AFB90700F73765 /* AppDelegate.h */,
 				80C663E818AFB90700F73765 /* AppDelegate.m */,
 				80C663EA18AFB90700F73765 /* Images.xcassets */,
 				80C663DF18AFB90700F73765 /* Supporting Files */,
+				80C6640E18AFB95700F73765 /* Page.storyboard */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -142,6 +150,62 @@
 				80C663FA18AFB90700F73765 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80C6640718AFB93700F73765 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80C6640818AFB93700F73765 /* Controller */,
+				80C6640918AFB93700F73765 /* Model */,
+				80C6640A18AFB93700F73765 /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80C6640818AFB93700F73765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80C6640918AFB93700F73765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80C6640A18AFB93700F73765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80C6641018AFB97E00F73765 /* MasterViewController.h */,
+				80C6641118AFB97E00F73765 /* MasterViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80C6640B18AFB93700F73765 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80C6640C18AFB93700F73765 /* Images */,
+				80C6640D18AFB93700F73765 /* Libraries */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80C6640C18AFB93700F73765 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		80C6640D18AFB93700F73765 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +285,7 @@
 			files = (
 				80C663E318AFB90700F73765 /* InfoPlist.strings in Resources */,
 				80C663EB18AFB90700F73765 /* Images.xcassets in Resources */,
+				80C6640F18AFB95700F73765 /* Page.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C663E918AFB90700F73765 /* AppDelegate.m in Sources */,
+				80C6641218AFB97E00F73765 /* MasterViewController.m in Sources */,
 				80C663E518AFB90700F73765 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
