@@ -27,7 +27,12 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-	self.page = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    
+    NSDictionary *options = [NSDictionary dictionaryWithObject:
+                             [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin]
+                                                        forKey: UIPageViewControllerOptionSpineLocationKey];
+    
+	self.page = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:options];
     self.page.dataSource=self;
     self.page.delegate=self;
     self.page.view.frame = self.view.bounds;
@@ -72,6 +77,4 @@
     }
     return [self viewControllerAtIndex:index];
 }
-
-
 @end
