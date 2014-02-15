@@ -21,6 +21,7 @@
 		8038A2A218AFF96D006811CB /* CeldaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A2A118AFF96D006811CB /* CeldaTests.m */; };
 		8038A2AC18AFF981006811CB /* Celda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8038A2AB18AFF981006811CB /* Celda.storyboard */; };
 		8038A2AF18AFF996006811CB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A2AE18AFF996006811CB /* MasterViewController.m */; };
+		8038A2B218AFFAA6006811CB /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A2B118AFFAA6006811CB /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8038A2AB18AFF981006811CB /* Celda.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Celda.storyboard; sourceTree = "<group>"; };
 		8038A2AD18AFF996006811CB /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		8038A2AE18AFF996006811CB /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		8038A2B018AFFAA6006811CB /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		8038A2B118AFFAA6006811CB /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				8038A2AB18AFF981006811CB /* Celda.storyboard */,
 				8038A2AD18AFF996006811CB /* MasterViewController.h */,
 				8038A2AE18AFF996006811CB /* MasterViewController.m */,
+				8038A2B018AFFAA6006811CB /* CustomCell.h */,
+				8038A2B118AFFAA6006811CB /* CustomCell.m */,
 			);
 			path = Celda;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			files = (
 				8038A28D18AFF96C006811CB /* AppDelegate.m in Sources */,
 				8038A2AF18AFF996006811CB /* MasterViewController.m in Sources */,
+				8038A2B218AFFAA6006811CB /* CustomCell.m in Sources */,
 				8038A28918AFF96C006811CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

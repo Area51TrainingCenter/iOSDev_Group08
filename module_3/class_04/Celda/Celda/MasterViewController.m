@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 
+
 @interface MasterViewController ()
 
 @end
@@ -44,19 +45,27 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testCell" forIndexPath:indexPath];
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testCell" forIndexPath:indexPath];
+    cell.delegate = self;
     
     // Configure the cell...
     
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
+}
+
+- (void)pasarAccion{
+    [[[UIAlertView alloc] initWithTitle:@"Delegado" message:@"Presionado" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
 }
 @end
