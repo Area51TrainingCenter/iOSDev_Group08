@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8038A25818AFBB41006811CB /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A25718AFBB41006811CB /* PageController.m */; };
+		8038A26518AFC26B006811CB /* FotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8038A26418AFC26B006811CB /* FotoViewController.m */; };
+		8038A26718AFC407006811CB /* stopOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 8038A26618AFC407006811CB /* stopOne.png */; };
+		8038A26C18AFC4AC006811CB /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8038A26818AFC4AC006811CB /* apple.png */; };
+		8038A26D18AFC4AC006811CB /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8038A26918AFC4AC006811CB /* mario.png */; };
+		8038A26E18AFC4AC006811CB /* rombo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8038A26A18AFC4AC006811CB /* rombo.png */; };
+		8038A26F18AFC4AC006811CB /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = 8038A26B18AFC4AC006811CB /* superman.png */; };
 		80C663D918AFB90700F73765 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C663D818AFB90700F73765 /* Foundation.framework */; };
 		80C663DB18AFB90700F73765 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C663DA18AFB90700F73765 /* CoreGraphics.framework */; };
 		80C663DD18AFB90700F73765 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C663DC18AFB90700F73765 /* UIKit.framework */; };
@@ -34,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8038A25618AFBB41006811CB /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		8038A25718AFBB41006811CB /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
+		8038A26318AFC26B006811CB /* FotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotoViewController.h; sourceTree = "<group>"; };
+		8038A26418AFC26B006811CB /* FotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotoViewController.m; sourceTree = "<group>"; };
+		8038A26618AFC407006811CB /* stopOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopOne.png; sourceTree = "<group>"; };
+		8038A26818AFC4AC006811CB /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		8038A26918AFC4AC006811CB /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
+		8038A26A18AFC4AC006811CB /* rombo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rombo.png; sourceTree = "<group>"; };
+		8038A26B18AFC4AC006811CB /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superman.png; sourceTree = "<group>"; };
 		80C663D518AFB90700F73765 /* Page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Page.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C663D818AFB90700F73765 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80C663DA18AFB90700F73765 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,6 +181,8 @@
 		80C6640818AFB93700F73765 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8038A25618AFBB41006811CB /* PageController.h */,
+				8038A25718AFBB41006811CB /* PageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +199,8 @@
 			children = (
 				80C6641018AFB97E00F73765 /* MasterViewController.h */,
 				80C6641118AFB97E00F73765 /* MasterViewController.m */,
+				8038A26318AFC26B006811CB /* FotoViewController.h */,
+				8038A26418AFC26B006811CB /* FotoViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +217,11 @@
 		80C6640C18AFB93700F73765 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8038A26818AFC4AC006811CB /* apple.png */,
+				8038A26918AFC4AC006811CB /* mario.png */,
+				8038A26A18AFC4AC006811CB /* rombo.png */,
+				8038A26B18AFC4AC006811CB /* superman.png */,
+				8038A26618AFC407006811CB /* stopOne.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -283,9 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8038A26D18AFC4AC006811CB /* mario.png in Resources */,
 				80C663E318AFB90700F73765 /* InfoPlist.strings in Resources */,
+				8038A26F18AFC4AC006811CB /* superman.png in Resources */,
 				80C663EB18AFB90700F73765 /* Images.xcassets in Resources */,
+				8038A26718AFC407006811CB /* stopOne.png in Resources */,
 				80C6640F18AFB95700F73765 /* Page.storyboard in Resources */,
+				8038A26C18AFC4AC006811CB /* apple.png in Resources */,
+				8038A26E18AFC4AC006811CB /* rombo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8038A25818AFBB41006811CB /* PageController.m in Sources */,
 				80C663E918AFB90700F73765 /* AppDelegate.m in Sources */,
 				80C6641218AFB97E00F73765 /* MasterViewController.m in Sources */,
+				8038A26518AFC26B006811CB /* FotoViewController.m in Sources */,
 				80C663E518AFB90700F73765 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +539,7 @@
 				80C6640318AFB90700F73765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80C6640418AFB90700F73765 /* Build configuration list for PBXNativeTarget "PageTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +548,7 @@
 				80C6640618AFB90700F73765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

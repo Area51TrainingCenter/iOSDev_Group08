@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UIViewController
+@interface MasterViewController : UIViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @end

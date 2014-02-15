@@ -7,9 +7,10 @@
 //
 
 #import "MasterViewController.h"
+#import "PageController.h"
 
 @interface MasterViewController ()
-
+@property (nonatomic, strong) UIPageViewController *page;
 @end
 
 @implementation MasterViewController
@@ -25,11 +26,24 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+	self.page = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.page.dataSource=self;
+    self.page.delegate=self;
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark -
+#pragma mark Page View Data Source Methods
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
+    return nil;
+}
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
+    return nil;
+}
+
 
 @end
