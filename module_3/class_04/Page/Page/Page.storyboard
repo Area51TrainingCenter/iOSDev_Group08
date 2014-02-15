@@ -25,7 +25,7 @@
         <!--Foto View Controller-->
         <scene sceneID="aoL-Mg-92R">
             <objects>
-                <viewController id="Aa1-aF-zLK" customClass="FotoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fotoScene" id="Aa1-aF-zLK" customClass="FotoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G0s-rv-NcX"/>
                         <viewControllerLayoutGuide type="bottom" id="Rgc-H1-ChC"/>

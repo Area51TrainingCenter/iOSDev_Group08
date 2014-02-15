@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "PageController.h"
+#import "FotoViewController.h"
 
 @interface MasterViewController ()
 @property (nonatomic, strong) UIPageViewController *page;
@@ -26,11 +27,26 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
 	self.page = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.page.dataSource=self;
     self.page.delegate=self;
+    self.page.view.frame = self.view.bounds;
+    FotoViewController *y = [self viewControllerAtIndex:0];
+    
+    [self.page setViewControllers:[NSArray arrayWithObjects:y, nil] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
+    //Colocando un UIViewController en otro UIViewController
+    [self addChildViewController:self.page];
+    [self.view addSubview:self.page.view];
+    [self.page didMoveToParentViewController:self];
 }
+
+- (FotoViewController *)viewControllerAtIndex:(NSUInteger)index {
+    FotoViewController *child = [self.storyboard instantiateViewControllerWithIdentifier:@"fotoScene"];
+    child.numeroDeFotoQueDeboMostrar=index;
+    return child;
+}
+
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
