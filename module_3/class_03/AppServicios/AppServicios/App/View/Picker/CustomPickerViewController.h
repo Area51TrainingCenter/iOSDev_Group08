@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomPickerViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIPickerView *miPicker;
 
 @end

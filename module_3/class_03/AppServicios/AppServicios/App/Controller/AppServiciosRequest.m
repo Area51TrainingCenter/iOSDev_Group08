@@ -22,7 +22,6 @@
         }else{
             
         }
-
         //NSLog(@"%@\n%@",task.response,responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         //NSLog(@"%@\n%@",task.response,error.localizedDescription);

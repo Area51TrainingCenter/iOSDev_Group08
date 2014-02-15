@@ -10,5 +10,7 @@
 
 @interface UbigeoViewController : UITableViewController<UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *departamento;
+@property (weak, nonatomic) IBOutlet UITextField *provincia;
+@property (weak, nonatomic) IBOutlet UITextField *distrito;
 
 @end

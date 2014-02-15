@@ -9,10 +9,13 @@
 #import "UbigeoViewController.h"
 #import "AppServiciosRequest.h"
 #import "Departamento.h"
+#import "CustomPickerViewController.h"
 
 @interface UbigeoViewController ()
-@property (nonatomic, strong) UIPickerView *miPicker;
+@property (nonatomic, strong) CustomPickerViewController *miPicker;
 @property (nonatomic, strong) NSArray *listaDeDepartamentos;
+@property (nonatomic, strong) NSArray *listaDeProvincias;
+@property (nonatomic, strong) NSArray *listaDeDistritos;
 @property (nonatomic, strong) Departamento *currentDepartamento;
 @end
 
@@ -30,21 +33,9 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    
-    [AppServiciosRequest solicitarListaDeDepartamentosConBloque:^(id listaDepartmentos, NSError *error) {
-        if (!error) {
-            self.listaDeDepartamentos = listaDepartmentos;
-            //NSLog(@"%@",listaDepartmentos);
-        }
-    }];
     /*
-    [AppServiciosRequest traerListaDePronvicia:@"" bloque:^(id listaProvincias, NSError *error) {
-        
-    }];
-    
-    [AppServiciosRequest traerDistritoDe:@"" yPrivincia:@"" bloque:^(id listaDistritos, NSError *error) {
-        
-    }];*/
+     
+    */
 
 }
 - (void)didReceiveMemoryWarning{
@@ -58,15 +49,26 @@
     return 1;
 }
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [self.listaDeDepartamentos count];
+    if ([self.departamento isFirstResponder]) {
+        return [self.listaDeDepartamentos count];
+    }else if ([self.provincia isFirstResponder]){
+        return [self.listaDeProvincias count];
+    }else{
+        return [self.listaDeDistritos count];
+    }
 }
 
 #pragma mark -
 #pragma mark Picker View Delegate Methods
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     
-    Departamento *d = [self.listaDeDepartamentos objectAtIndex:row];
-    return d.dep_nombre;
+    if ([self.departamento isFirstResponder]) {
+        Departamento *d = [self.listaDeDepartamentos objectAtIndex:row];
+        return d.dep_nombre;
+    }else{
+        return nil;
+    }
+    
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     self.currentDepartamento = [self.listaDeDepartamentos objectAtIndex:row];
@@ -77,11 +79,32 @@
 #pragma mark -
 #pragma mark TextField Delegate Methods
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    self.miPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, 320, 162)];
-    self.miPicker.delegate = self;
-    self.miPicker.dataSource = self;
-    [textField setInputView:self.miPicker];
+    
+    if (textField == self.departamento) {
+        [AppServiciosRequest solicitarListaDeDepartamentosConBloque:^(id listaDepartmentos, NSError *error) {
+            if (!error) {
+                self.listaDeDepartamentos = listaDepartmentos;
+                NSLog(@"%@",listaDepartmentos);
+            }
+        }];
+    }else if (textField == self.provincia){
+        [AppServiciosRequest traerListaDePronvicia:self.currentDepartamento.dep_id bloque:^(id listaProvincias, NSError *error) {
+            self.listaDeProvincias = listaProvincias;
+        }];
+
+    }else{
+        [AppServiciosRequest traerDistritoDe:@"" yPrivincia:@"" bloque:^(id listaDistritos, NSError *error) {
+            self.listaDeDistritos = listaDistritos;
+        }];
+    }
+    
+    self.miPicker = [self.storyboard instantiateViewControllerWithIdentifier:@"pickerScene"];
+    self.miPicker.miPicker.frame = CGRectMake(self.miPicker.view.frame.origin.x, self.miPicker.view.frame.origin.y, self.miPicker.view.frame.size.width, self.miPicker.view.frame.size.height);
+    self.miPicker.miPicker.delegate = self;
+    self.miPicker.miPicker.dataSource = self;
+    [textField setInputView:self.miPicker.view];
     return YES;
 }
+
 
 @end
